@@ -13,3 +13,11 @@ To use these bindings in your Rust project, simply add this repository as a depe
 [dependencies]
 windows_bindings = { git = "https://github.com/panda2code/windows-rust-bindings" }
 ```
+
+Note: these bindings only work when the build target is set to `x86_64-pc-windows-gnu` if you want to set the defulte build target of cargo to `x86_64-pc-windows-gnu` create a directory named `.cargo` and create `config.toml` inside it
+
+### .cargo/config.toml
+```toml
+[build]
+target = "x86_64-pc-windows-gnu"
+```
